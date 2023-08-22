@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cor-de-fundo: #000000;
+    --roxo-principal: #522AB1; 
+
+    --fonte-primaria: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin: 0; 
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--cor-de-fundo);
+    z-index: 1000;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 100%; 
+    padding-right: 40px; 
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--branco-principal);
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--roxo-principal); 
+}
+
+.principal__container {
+    width: auto;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    top: 0;
+
+}
+
+.imagem-de-fundo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.quem__somos {
+    width: 50%;
+    margin: 2% auto; 
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+
+.rodape{
+    color: var(--branco-principal);
+    background-color: var(--roxo-principal);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro horizontal */
+    text-align: center; /* Centraliza o texto dos itens */
+    list-style-type: none;
+    margin-top: em;
+    padding: 0; /* Remova o padding padrão das listas */
+}
+
+.lista__link {
+    margin: 0; /* Remova as margens padrão dos itens da lista */
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin: 0 1em; /* Adicione margens horizontal aos links para espaçamento */
+}
+
+.lista__link a:hover {
+    color: var(--cor-de-fundo);
+}
+
+
