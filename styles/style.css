@@ -4,7 +4,6 @@
     --branco-principal: #FFFFFF;
     --cor-de-fundo: #000000;
     --roxo-principal: #522AB1; 
-
     --fonte-primaria: 'Montserrat', sans-serif;
 }
 
@@ -74,7 +73,6 @@ body {
     line-height: normal;
     padding: 20px 0;
 }
-
 
 .rodape{
     color: var(--branco-principal);
