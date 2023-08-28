@@ -57,6 +57,11 @@ body {
     height: auto;
 }
 
+.img{
+    width: 100%;
+    height: auto;
+}
+
 .quem__somos {
     max-width: 50%;
     margin: 2% auto; 
@@ -97,6 +102,36 @@ body {
 .lista__link a {
     margin: 0 0.5em; 
 }
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: var(--fonte-primaria);
+    color: #FFF;
+}
+
+.button{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    border: 2px solid var(--branco-principal);
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 200;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #1f1f1f;
+    color: white;
+  }
 
 .footer__copyright {
     display: flex;
