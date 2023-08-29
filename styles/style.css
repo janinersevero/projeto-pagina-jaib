@@ -5,6 +5,15 @@
     --cor-de-fundo: #000000;
     --roxo-principal: #522AB1; 
     --fonte-primaria: 'Montserrat', sans-serif;
+    --numDays: 5;
+  --numHours: 10;
+  --timeHeight: 60px;
+  --calBgColor: #FFFFFF;
+  --eventBorderColor: #f2d3d8;
+  --eventColor1: #645CAA;
+  --eventColor2: #A084CA;
+  --eventColor3: #BFACE0;
+  --eventColor4: #EBC7E8;
 }
 
 body {
@@ -129,6 +138,148 @@ body {
 .button:hover {
     background-color: #1f1f1f;
     color: white;
+  }
+
+  .calendar {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    margin: 2rem;
+  }
+  
+  .timeline {
+    display: grid;
+    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+  }
+  
+  .days {
+    display: grid;
+    grid-column: 2;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .events {
+    display: grid;
+    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+    border-radius: 8px;
+    background: var(--calBgColor);
+  }
+  
+  .start-13 {
+    grid-row-start: 1;
+  }
+  
+  .start-14 {
+    grid-row-start: 2;
+  }
+  
+  .start-15 {
+    grid-row-start: 3;
+  }
+  
+  .start-16 {
+    grid-row-start: 4;
+  }
+  
+  .start-17 {
+    grid-row-start: 5;
+  }
+  
+  .start-18 {
+    grid-row-start: 6;
+  }
+  
+  .start-19 {
+    grid-row-start: 7;
+  }
+  
+  .start-20 {
+    grid-row-start: 8;
+  }
+  
+  .end-16 {
+    grid-row-end: 4;
+  }
+  
+  .end-17 {
+    grid-row-end: 5;
+  }
+  
+  .end-18 {
+    grid-row-end: 6;
+  }
+  
+  .end-19 {
+    grid-row-end: 7;
+  }
+  
+  .end-20 {
+    grid-row-end: 8;
+  }
+  
+  .end-21 {
+    grid-row-end: 9;
+  }
+  
+  .title {
+    font-weight: 600;
+    margin: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .time {
+    margin: 0.5rem;
+    margin-top: 0;
+  }
+
+  .event {
+    align-items: center;
+    border-radius: 5px;
+    margin: 0.2rem 0.5rem;
+    background: white;
+  }
+  
+  .space,
+  .date {
+    height: 80px;
+  }
+  
+  body {
+    font-family: Montserrat;
+  }
+  
+  .credenciamento {
+    background: var(--eventColor1);
+  }
+  
+  .palestra {
+    background: var(--eventColor2);
+  }
+  
+  .minicurso {
+    background: var(--eventColor3);
+  }
+  
+  .intervalo {
+    background: var(--eventColor4);
+  }
+  
+  .date {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .date-num {
+    font-size: 3rem;
+    font-weight: 600;
+    display: inline;
+  }
+  
+  .date-day {
+    display: inline;
+    font-size: 3rem;
+    font-weight: 100;
   }
 
 .footer__copyright {
