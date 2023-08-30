@@ -6,14 +6,14 @@
     --roxo-principal: #522AB1; 
     --fonte-primaria: 'Montserrat', sans-serif;
     --numDays: 5;
-  --numHours: 10;
-  --timeHeight: 60px;
-  --calBgColor: #FFFFFF;
-  --eventBorderColor: #f2d3d8;
-  --eventColor1: #645CAA;
-  --eventColor2: #A084CA;
-  --eventColor3: #BFACE0;
-  --eventColor4: #EBC7E8;
+    --numHours: 9;
+    --timeHeight: 80px;
+    --calBgColor: #FFFFFF;
+    --eventBorderColor: #f2d3d8;
+    --eventColor1: #98BAE7;
+    --eventColor2: #A084CA;
+    --eventColor3: #BFACE0;
+    --eventColor4: #EBC7E8;
 }
 
 body {
@@ -60,16 +60,33 @@ body {
     color: var(--roxo-principal); 
 }
 
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .img__fluid{
     max-width: 100%;
     height: auto;
 }
 
-.img{
-    width: 100%;
-    height: auto;
-}
-
+.arrow_down {
+    background-color: var(--cor-de-fundo);
+    box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    width: 150px;
+    border-radius: 80px 80px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
 .quem__somos {
     max-width: 50%;
     margin: 2% auto; 
@@ -142,9 +159,10 @@ body {
 
   .calendar {
     display: grid;
-    gap: 10px;
+    gap: 15px;
     grid-template-columns: auto 1fr;
     margin: 2rem;
+    margin-bottom: auto;
   }
   
   .timeline {
@@ -155,7 +173,7 @@ body {
   .days {
     display: grid;
     grid-column: 2;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   
