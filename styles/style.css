@@ -127,15 +127,24 @@ body {
     margin: 0 0.5em; 
 }
 
-.contato{
+.contato {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin: 2rem;
     font-family: var(--fonte-primaria);
     color: #FFF;
-}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contato {
+      flex-direction: column;
+      align-items: center; /* Opcional: centralizar os itens verticalmente */
+    }
+  }
+  
 
 .button{
     background-color: var(--cor-de-fundo);
@@ -298,6 +307,18 @@ body {
     display: inline;
     font-size: 3rem;
     font-weight: 100;
+  }
+
+  .titulo__produtos{
+    max-width: 50%;
+    margin: 2% auto; 
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
 .footer__copyright {
