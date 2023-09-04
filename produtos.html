@@ -1,53 +1,572 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">HOME</a>
-            <a class="cabecalho__menu__link" href="cronograma.html">CRONOGRAMA</a>
-            <a class="cabecalho__menu__link" href="produtos.html">PRODUTOS</a>
-            <a class="cabecalho__menu__link" href="contato.html">CONTATO</a>
-        </nav>
+      <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="index.html">HOME</a>
+        <a class="cabecalho__menu__link" href="cronograma.html">CRONOGRAMA</a>
+        <a class="cabecalho__menu__link" href="produtos.html">PRODUTOS</a>
+        <a class="cabecalho__menu__link" href="contato.html">CONTATO</a>
+      </nav>
     </header>
 
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/moletom.png"
+            class="d-block w-100"
+            alt="Banner Moletons da Jornada Acadêmica da Informática Biomédica"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/caneca.png"
+            class="d-block w-100"
+            alt="Banner Caneca da Jornada Acadêmica da Informática Biomédica"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/camisetas.png"
+            class="d-block w-100"
+            alt="Banner Camisetas da Jornada Acadêmica da Informática Biomédica"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/caneco.png"
+            class="d-block w-100"
+            alt="Banner Caneco da Jornada Acadêmica da Informática Biomédica"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/bottom.png"
+            class="d-block w-100"
+            alt="Banner Bottom da Jornada Acadêmica da Informática Biomédica"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="titulo__produtos">
+      <h2>Categorias:</h2>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center g-3">
+        <div class="col-5 col-md-4 col-xxl-2">
+          <div class="card rounded-10 border-5">
+            <img
+              class="d-md-none d-block"
+              src="assets/camisetacard.png"
+              alt="Camiseta Branca da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-md-block d-xl-none"
+              src="assets/camisetacard.png"
+              alt="Camiseta Branca da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-xl-block"
+              src="assets/camisetacard.png"
+              alt="Camiseta Branca da Jornada Acadêmica da Informática Biomédica"
+            />
+            <div class="card-header bg-black text-bg-dark">
+              <p class="text-center card-text">Camisetas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-4 col-xxl-2">
+          <div class="card rounded-10 border-5">
+            <img
+              class="d-md-none d-block"
+              src="assets/moletomcard.png"
+              alt="Moletom Branco da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-md-block d-xl-none"
+              src="assets/moletomcard.png"
+              alt="Moletom Branco da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-xl-block"
+              src="assets/moletomcard.png"
+              alt="Moletom Branco da Jornada Acadêmica da Informática Biomédica"
+            />
+            <div class="card-header bg-black text-bg-dark">
+              <p class="text-center card-text">Moletons</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-4 col-xxl-2">
+          <div class="card rounded-10 border-5">
+            <img
+              class="d-md-none d-block"
+              src="assets/canecocard.png"
+              alt="Caneco da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-md-block d-xl-none"
+              src="assets/canecocard.png"
+              alt="Caneco da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-xl-block"
+              src="assets/canecocard.png"
+              alt="Caneco da Jornada Acadêmica da Informática Biomédica"
+            />
+            <div class="card-header bg-black text-bg-dark">
+              <p class="text-center card-text">Caneco</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-4 col-xxl-2">
+          <div class="card rounded-10 border-5">
+            <img
+              class="d-md-none d-block"
+              src="assets/canecacard.png"
+              alt="Caneca da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-md-block d-xl-none"
+              src="assets/canecacard.png"
+              alt="Caneca da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-xl-block"
+              src="assets/canecacard.png"
+              alt="Caneca da Jornada Acadêmica da Informática Biomédica"
+            />
+            <div class="card-header bg-black text-bg-dark">
+              <p class="text-center card-text">Caneca</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-5 col-md-4 col-xxl-2">
+          <div class="card rounded-10 border-5">
+            <img
+              class="d-md-none d-block"
+              src="assets/bottomcard.png"
+              alt="Bottom da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-md-block d-xl-none"
+              src="assets/bottomcard.png"
+              alt="Bottom da Jornada Acadêmica da Informática Biomédica"
+            />
+            <img
+              class="d-none d-xl-block"
+              src="assets/bottomcard.png"
+              alt="Bottom da Jornada Acadêmica da Informática Biomédica"
+            />
+            <div class="card-header bg-black text-bg-dark">
+              <p class="text-center card-text">Bottoms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="titulo__produtos">
+      <h2>Produtos:</h2>
+    </div>
+
+    <div class="container row mx-auto">
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/camisetacard.png"
+            alt="Camiseta Branca da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/camisetacard.png"
+            alt="Camiseta Branca da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/camisetacard.png"
+            alt="Camiseta Branca da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Camiseta Branca JAIB</h5>
+            <p class="card-text">
+              Multicores e tamanhos. Tecido de algodão 100% fresquinho para o
+              verão. Modelagem unissex.
+            </p>
+            <p class="fw-bold">R$35,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/camisetapretacard.png"
+            alt="Camiseta Preta da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/camisetapretacard.png"
+            alt="Camiseta Preta da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/camisetapretacard.png"
+            alt="Camiseta Preta da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Camiseta Preta JAIB</h5>
+            <p class="card-text">
+              Multicores e tamanhos. Tecido de algodão 100% fresquinho para o
+              verão. Modelagem unissex.
+            </p>
+            <p class="fw-bold">R$35,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/canecacard.png"
+            alt="Caneca de Cerâmica da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/canecacard.png"
+            alt="Caneca de Cerâmica da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/canecacard.png"
+            alt="Caneca de Cerâmica da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Caneca de Cerâmica JAIB</h5>
+            <p class="card-text">
+              Caneca de Cerâmica da Jornada Acadêmica. Impressão Frente e Verso.
+            </p>
+            <p class="fw-bold">R$35,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/moletomcard.png"
+            alt="Moletom Branco da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/moletomcard.png"
+            alt="Moletom Branco da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/moletomcard.png"
+            alt="Moletom Branco da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Moletom Branco JAIB</h5>
+            <p class="card-text">
+              Multicores e tamanhos. Tecido quentinho para o inverno. Modelagem
+              unissex.
+            </p>
+            <p class="fw-bold">R$110,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/moletompretocard.png"
+            alt="Moletom Preto da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/moletompretocard.png"
+            alt="Moletom Preto da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/moletompretocard.png"
+            alt="Moletom Preto da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Moletom Preto JAIB</h5>
+            <p class="card-text">
+              Multicores e tamanhos. Tecido quentinho para o inverno. Modelagem
+              unissex.
+            </p>
+            <p class="fw-bold">R$110,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/moletomroxocard.png"
+            alt="Moletom Roxo da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/moletomroxocard.png"
+            alt="Moletom Roxo da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/moletomroxocard.png"
+            alt="Moletom Roxo da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Moletom Roxo JAIB</h5>
+            <p class="card-text">
+              Multicores e tamanhos. Tecido quentinho para o inverno. Modelagem
+              unissex.
+            </p>
+            <p class="fw-bold">R$110,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/canecocard.png"
+            alt="Caneco da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/canecocard.png"
+            alt="Caneco da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/canecocard.png"
+            alt="Caneco da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Caneco com Tirante JAIB</h5>
+            <p class="card-text">
+              Caneco de Alumínio 500ml. Caneco e Tirante podem ser vendidos
+              separadamente.
+            </p>
+            <p class="fw-bold">R$30,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/bottomcard.png"
+            alt="Bottom da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/bottomcard.png"
+            alt="Bottom da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/bottomcard.png"
+            alt="Bottom da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Bottom Modelo 1 JAIB</h5>
+            <p class="card-text">
+              Bottom da Jornada Acadêmica da Informática Biomédica. Tamanho:
+              25mm.
+            </p>
+            <p class="fw-bold">R$3,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-md-none d-block"
+            src="assets/bottom2card.png"
+            alt="Bottom da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/bottom2card.png"
+            alt="Bottom da Jornada Acadêmica da Informática Biomédica"
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/bottom2card.png"
+            alt="Bottom da Jornada Acadêmica da Informática Biomédica"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Bottom Modelo 2 JAIB</h5>
+            <p class="card-text">
+              Bottom da Jornada Acadêmica da Informática Biomédica. Tamanho:
+              25mm.
+            </p>
+            <p class="fw-bold">R$3,00</p>
+            <a
+              href="https://forms.gle/yUyiBUAWBCPWk6HQA"
+              class="btn btn-outline-dark"
+              >Ver mais</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="rodape">
-        <p>Comissão Organizadora da Jornada Acadêmica da Informática Biomédica</p>
-        <div class="footer__contato">
-        <h1> Nos Contate!</h1>
+      <p>Comissão Organizadora da Jornada Acadêmica da Informática Biomédica</p>
+      <div class="footer__contato">
+        <h1>Nos Contate!</h1>
         <ul class="rodape__lista">
-            <li class="lista__link">
-                <a href="mailto:semana.acadinfobio@gmail.com">
-                    <img src="assets/email_branco.png" width="40" height="40" alt="E-mail">
-                </a>
-            </li>
-            <li class="lista__link">
-                <a href="https://instagram.com/jornada.infobio?igshid=MzRlODBiNWFlZA==">
-                    <img src="assets/instagram_branco.png" width="40" height="40" alt="Instagram">
-                </a>
-            </li>
-            <li class="lista__link">
-                <a href="https://www.linkedin.com/company/jornada-infobio/">
-                    <img src="assets/linkedin_branco.png" width="40" height="40" alt="Linkedin">
-                </a>
-            </li>
-            <li class="lista__link">
-                <a href="https://www.facebook.com/semanaacademicainfobio/">
-                    <img src="assets/facebook _branco.png" width="40" height="40" alt="Facebook">
-                </a>
-            </li>
+          <li class="lista__link">
+            <a href="mailto:semana.acadinfobio@gmail.com">
+              <img
+                src="assets/email_branco.png"
+                width="40"
+                height="40"
+                alt="E-mail"
+              />
+            </a>
+          </li>
+          <li class="lista__link">
+            <a
+              href="https://instagram.com/jornada.infobio?igshid=MzRlODBiNWFlZA=="
+            >
+              <img
+                src="assets/instagram_branco.png"
+                width="40"
+                height="40"
+                alt="Instagram"
+              />
+            </a>
+          </li>
+          <li class="lista__link">
+            <a href="https://www.linkedin.com/company/jornada-infobio/">
+              <img
+                src="assets/linkedin_branco.png"
+                width="40"
+                height="40"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+          <li class="lista__link">
+            <a href="https://www.facebook.com/semanaacademicainfobio/">
+              <img
+                src="assets/facebook _branco.png"
+                width="40"
+                height="40"
+                alt="Facebook"
+              />
+            </a>
+          </li>
         </ul>
         <div class="footer__copyright">
-            <p> Copyright © by Semana Acadêmica da Informática Biomédica </p>
+          <p>Copyright © by Semana Acadêmica da Informática Biomédica</p>
         </div>
-        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
+
