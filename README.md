@@ -1,9 +1,8 @@
-# ProjetoPaginaJAIB
+# Projeto Página JAIB
 
-<p align="center">Site para divulgação da Jornada Acadêmica da Informática Biomédica.</p>
+Elaboração de um site de divulgação para a Jornada Acadêmica da Informática Biomédica e estudos de desenvolvimento Front-End utilizando HTML e CSS.
 
-
-## Tecnologias
+Tecnologias Utilizadas: 
 * HTML
 * CSS
-* Bootstrap
+* Bootstrap (Framework)
